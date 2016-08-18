@@ -1,0 +1,124 @@
+object Form1: TForm1
+  Left = 309
+  Height = 376
+  Top = 157
+  Width = 838
+  Caption = 'LabPhysics'
+  ClientHeight = 376
+  ClientWidth = 838
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object StringGrid1: TStringGrid
+    Left = 8
+    Height = 49
+    Top = 288
+    Width = 713
+    ColCount = 10
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 2
+    TabOrder = 0
+    ColWidths = (
+      132
+      64
+      64
+      64
+      64
+      64
+      64
+      64
+      64
+      64
+    )
+  end
+  object Button1: TButton
+    Left = 523
+    Height = 24
+    Top = 64
+    Width = 155
+    Caption = 'Определить погрешность'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 523
+    Height = 15
+    Top = 96
+    Width = 201
+    Caption = 'Измерительная погрешность равна:'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Edit1: TEdit
+    Left = 728
+    Height = 23
+    Top = 96
+    Width = 91
+    OnChange = Edit1Change
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 523
+    Height = 31
+    Top = 19
+    Width = 147
+    Caption = 'Построить график'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Chart1: TChart
+    Left = 8
+    Height = 268
+    Top = 8
+    Width = 504
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    ParentColor = False
+    object Chart1LineSeries1: TLineSeries
+    end
+  end
+  object Label2: TLabel
+    Left = 476
+    Height = 15
+    Top = 353
+    Width = 137
+    Caption = 'Даниил Ермоленко, 2015'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 628
+    Height = 15
+    Top = 355
+    Width = 78
+    Caption = 'Исходный код'
+    Font.Color = clHotLight
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    OnDblClick = Label3DblClick
+  end
+  object Button3: TButton
+    Left = 689
+    Height = 36
+    Top = 200
+    Width = 117
+    Caption = 'Button3'
+    TabOrder = 5
+  end
+end
